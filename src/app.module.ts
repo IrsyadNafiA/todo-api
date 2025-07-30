@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TodoModule } from './todo/todo.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -12,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     database: "todo_db",
     autoLoadEntities: true,
     synchronize: true, // for dev
-  }), TodoModule],
+  }), TodoModule, AuthModule],
 })
 
 export class AppModule {}

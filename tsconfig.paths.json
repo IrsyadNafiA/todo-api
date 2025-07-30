@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@types": ["src/types"],
+            "@types/*": ["src/types/*"],
+            "@common": ["src/common"],
+            "@common/*": ["src/common/*"],
+            "@auth/*": ["src/auth/*"],
+            "@user/*": ["src/user/*"],
+            "@todo/*": ["src/todo/*"],
+            "@product/*": ["src/product/*"],
+        }
+    }
+}
